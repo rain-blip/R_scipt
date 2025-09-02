@@ -26,7 +26,7 @@ for (i in 1:100) {
   # Run PLINK -- use data for --keep as stdin
   keep.name <- sprintf("pop%03d", i)
   out.name <- sprintf("pop%03d", i)
-  system(sprintf("plink --bfile Kyrgyzstan_data_asia_40samples --cow --keep %s --make-bed --out %s", keep.name, out.name))
+  system(sprintf("plink --bfile BCDCM1747 --cow --keep %s --make-bed --out %s", keep.name, out.name))
 }
 
 ##RRAA_average##
